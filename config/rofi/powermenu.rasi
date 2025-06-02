@@ -1,0 +1,99 @@
+
+* {
+    main: rgba(57, 50, 50, 1);
+    secondary: rgba(77, 69, 69, 0.9);
+    first: rgba(141, 98, 98, 0.8);
+    accent: rgba(81, 152, 114, 0.9);
+    transparent1: rgba(81, 152, 114, 0.0);
+      // main: #393232; 
+// secondary:  #4D4545;
+    // first:  #8D6262;
+     secnd:  #ED8D8D;
+    // accent: #519872;
+}
+entry{
+  text-color: @secnd;
+  placeholder-color: @secnd;
+  border:0;
+  padding:5;
+  margin:0;
+}
+
+entry input {
+    text-color: @secnd; 
+}
+
+inputbar {
+    children: [prompt, entry];
+    enabled:false;
+    spacing: 0;                
+}
+
+window{
+focus:true;
+transparency:"real";
+background-color: @transparent1;
+border:none;
+width:15%;
+padding:20px;
+normal-window:true;
+}
+
+element {
+    padding: 8px 10px;
+    opacity:0.9;
+    border-radius: 0px;
+}
+
+element-text{
+  spacing:10px;
+  text-color:@secnd;
+}
+
+element-icon{
+  size:1.3em;
+}
+
+element normal.normal,element alternate.normal{
+    background-color:@transparent1;
+}
+
+element selected.normal{
+background-color:@first;
+text-color:@secondary;
+}
+
+scrollbar{
+  enabled:false;    
+  handle-width: 0;
+  handle-color:@transparent1;
+}
+
+listview {
+    background-color: @transparent1; 
+    border:0;
+    columns: 1; 
+    lines: 3; 
+    spacing: 10px;
+}
+
+configuration {
+	font: "JetBrainsMono Nerd Font  16";
+  text-color: @secnd;
+  display-drun: "";
+  close-on-lose-focus: true;
+  show-immediate: true;
+  drun-display-format:"{icon}{name}";
+	location: 0;
+	yoffset:0;
+  xoffset: 0;
+	fixed-num-lines: true;
+	show-icons:false;
+	// drun-match-fields: "name,generic,exec,categories,keywords";
+  drun-match-fields:"name";
+	disable-history:true;
+	sort:true;
+	sorting-method: "normal";
+  steal-focus:true;
+
+}

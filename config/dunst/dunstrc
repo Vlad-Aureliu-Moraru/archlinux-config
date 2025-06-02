@@ -1,0 +1,31 @@
+[global]
+monitor = 1
+frame_width = 3
+frame_color = "#ED8D8D"
+separator_color= frame
+highlight = "#8D6262"
+background = "#393232"
+foreground = "#8D6262"
+font = "JetBrainsMono Nerd Font 8"
+corner_radius = 0
+progress_bar_corner_radius = 0
+corners = top-left,bottom
+progress_bar_corners = top-left,bottom-right
+offset = (11,11)
+gap_size = 5
+format = "<b>--- %a</b>\n%s\n<i>%b</i>"
+
+[urgency_low]
+foreground = "#537D5D"
+frame_color = "#393232"
+default_icon = "~/.config/dunst/icons/bell-badge-low.svg"
+
+[urgency_normal]
+foreground = "#ED8D8D"
+frame_color = "#393232"
+default_icon = "~/.config/dunst/icons/bell-badge.svg"
+
+[urgency_critical]
+foreground = "#493D9E"
+frame_color = "#393232"
+default_icon = "~/.config/dunst/icons/alert-decagram.svg"
